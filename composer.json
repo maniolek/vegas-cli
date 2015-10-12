@@ -1,0 +1,35 @@
+{
+    "name": "vegas-cmf/cli",
+    "type": "library",
+    "description": "Vegas CMF Core",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amsterdam Standard Vegas Team",
+            "email": "vegas@amsterdam-standard.pl"
+        }
+    ],
+    "repositories": [
+        {
+            "type" : "git",
+            "url" : "https://github.com/phalcon/phalcon-devtools.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-phalcon": "2.*",
+        "phalcon/incubator": "2.*"
+    },
+    "require-dev": {
+        "phalcon/devtools": "2.*",
+        "phpunit/phpunit": "4.0.*",
+        "satooshi/php-coveralls": "dev-master",
+        "ext-mongo": ">=1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vegas\\Cli\\": "src/",
+            "Vegas\\Tests\\": "tests/"
+        }
+    }
+}
